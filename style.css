@@ -1,4 +1,5 @@
-* {
+*{
+    /* margin: 0; */
     box-sizing: border-box;
 }
 
@@ -60,6 +61,10 @@ section h2 {
     width: 300px;
     border-radius: 10px;
 }
+.foto img:hover{
+    /* border: 2px solid white; */
+    box-shadow: 0 0 5px #fff;
+}
 .about{
     display: flex;
     padding: 20px;
@@ -89,7 +94,10 @@ section h2 {
     height: auto;
     width: 280px;
     height: 152px;
-    
+
+}
+.projeto img:hover{
+    border: 1px solid white;
 }
 
 .projeto h3 {
