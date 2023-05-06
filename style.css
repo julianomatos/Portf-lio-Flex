@@ -16,7 +16,9 @@ header {
     align-items: center;
     padding: 10px;
 }
-
+header h1 span{
+    display: none;
+}
 nav ul {
     list-style: none;
     display: flex;
@@ -151,7 +153,10 @@ footer {
     align-items: center;
     padding: 10px;
 }
-
+header h1::before{
+    text-align: center;
+    content: 'DESENVOLVEDOR ';
+}
 
 @media screen and (max-width: 800px) {
     header {
@@ -175,6 +180,10 @@ footer {
     .projetos{
         flex-direction: column;
     }
+    header h1::before{
+        text-align: center;
+        content: 'DEV ';
+    }
     
 }
 @media screen and (max-width: 450px) {
@@ -187,15 +196,18 @@ footer {
     h2{
         font-size: 1.5rem;
     }
-    header h1{
+    header h1::before{
         text-align: center;
+        content: 'DEV ';
     }
+   
     footer{
         flex-direction: column;
     }
     section{
         margin: 0;
     }
+   
 }
 
 
